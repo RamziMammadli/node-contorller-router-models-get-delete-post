@@ -35,7 +35,7 @@ const postController = {
   },
   deleteById: (req, res) => {
     let id = req.params.id;
-
+    
     post.findById(id, (err, doc) => {
       if (!err) {
         doc.isdeleted = true;

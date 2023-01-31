@@ -14,4 +14,9 @@ router.post(
 router.get("/:id", postController.getById);
 router.delete("/:id", postController.deleteById);
 
+router.put('/:id', (req, res) => {
+    res.send('ok')
+    postController.add
+  })
+
 module.exports = router;
